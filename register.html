@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getlinked</title>
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@700,500,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,700&family=Unica+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://kit.fontawesome.com/94fe2c2c98.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container flex">
+            <p class="title">
+                <a href="index.html">get<span class="accent">linked</span><a>
+            </p>
+            <nav>
+                <ul class="pri-nav flex">
+                    <li><a href="index.html#timeline">Timeline</a></li>
+                    <li><a href="index.html#overview">Overview</a></li>
+                    <li><a href="index.html#faq">FAQs</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                    <li>
+                        <div class="register">
+                            <a href="/register.html">Register</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="wrapper">
+        <div class="container">
+            <p class="accent mob-invisible reg-mob">Register</p>
+            <div class="registration grid">
+                <div class="banner">
+                    <img src="img/register.png" alt="">
+                </div>
+                <div class="reg">
+                    <h2 class="accent">Register</h2>
+                    <p>Be part of this movement! </p>
+                    <div class="ppl">
+                        <img src="img/reg-girl.png" alt="girl walking">
+                        <img src="img/reg-boy.png" alt="boy walking">
+                    </div>
+                    <h3>CREATE YOUR ACCOUNT</h3>
+                    <form class="reg-form" action="https://backend.getlinked.ai/hackathon/registration" method="post">
+                        <div class="reg-grid">
+                            <div class="span-2 name">
+                                <label for="name">Team’s Name</label>
+                                <input id="name" type="text" name="name" placeholder="Enter the name of your group">
+                            </div>
+    
+                            <div class="span-2 no">
+                                <label for="number">Phone</label>
+                                <input type="text" id="number" name="number" placeholder="Enter your phone number">
+                            </div>
+    
+                            <div class="span-2 mail">
+                                <label for="mail">Email</label>
+                                <input id="mail" type="email" name="email" placeholder="Enter your email address">
+                            </div>
+    
+                            <div class="span-2 topic">
+                                <label for="topic">Project Topic</label>
+                                <input type="text" id="topic" placeholder="What is your group project topic">
+                            </div>
+                            
+                            <!-- <div class="select"></div> -->
+                            <div class="cat">
+                                <label for="category">Category</label>
+                                <select name="category" id="category">
+                                    <!-- populate with api -->
+                                    <option value="nil" selected disabled>Select your category</option>
+                                </select>
+
+                            </div>
+    
+                            <div class="size">
+                                <label for="size">Group Size</label>
+                                <select name="size" id="size">
+                                    <!-- populate with api -->
+                                    <option value="nil" selected disabled>Select</option>
+                                </select>
+                                
+                            </div>
+                        </div>
+
+                        <p class="accent2">Please review your registration details before submitting</p>
+                        <input id="agree" type="checkbox" name="agree" value="agreed">
+                        <label class="agreed" for="agree">
+                            <span class="custom-check"><i class="fa-solid fa-check"></i>
+                            </span>
+                            I agreed with the event terms and conditions  and privacy policy
+                        </label>
+                        
+                    </form>
+                    <div class="btn"><button class="register">Register Now</button></div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+</body>
+</html>
